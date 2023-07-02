@@ -6,7 +6,7 @@ import {
 import { Server } from 'socket.io';
 import { Streamer } from 'src/streamers/schemas/streamer.schema';
 
-@WebSocketGateway(3002, {
+@WebSocketGateway({
   cors: true,
 })
 export class EventsGateway implements OnGatewayConnection {
