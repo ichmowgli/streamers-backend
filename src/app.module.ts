@@ -8,10 +8,7 @@ import { env } from './env';
 
 @Module({
   imports: [
-    MongooseModule.forRoot(
-      env.DATABASE_URL,
-      { dbName: 'streamers' },
-    ),
+    MongooseModule.forRoot(env.DATABASE_URL, { dbName: 'streamers' }),
     StreamersModule,
   ],
   controllers: [AppController],
